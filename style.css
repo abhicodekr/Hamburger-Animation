@@ -1,0 +1,44 @@
+body {
+  background: #15172e;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(50%, 50%);
+  width: 50%;
+  cursor: pointer;
+}
+
+.main::before,
+.main::after,
+.main div {
+  background: #b77a52;
+  content: "";
+  display: block;
+  height: 6px;
+  width: 50px;
+  border-radius: 3px;
+  margin: 7px 0px;
+  transition: 1s;
+  cursor: pointer;
+}
+.main:hover:before {
+  width: 10px;
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.main:hover:after {
+  width: 10px;
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+.main:hover div {
+  width: 10px;
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
